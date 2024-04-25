@@ -9,10 +9,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('./1335294.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .myUl {
-    background-color: #fff;
     list-style: none;
     display: flex;
 }
