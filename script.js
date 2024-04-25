@@ -68,3 +68,13 @@ list.forEach((item) => {
         item.style.backgroundColor = '#000';
     });
 })
+
+// lecture
+let array = ['mercedes', 'aba ra'];
+
+let ulElement = `<ul>
+    <li>${array[0]}</li>
+    <li>${array[1]}</li>
+</ul>`
+
+document.body.innerHTML = ulElement;
