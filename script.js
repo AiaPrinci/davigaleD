@@ -44,12 +44,6 @@ strings.forEach((ulLi) => {
     li.textContent = ulLi;
     li.className = 'classLi'
     ul.appendChild(li);
-    // li.addEventListener('click', () => {
-    //     strings.forEach((list) => {
-    //         list.style.backgroundColor = 'rgb(43, 0, 26)';
-    //     })
-    //     li.style.backgroundColor = '#000';
-    // });
 }); 
 
 
@@ -65,16 +59,16 @@ list.forEach((item) => {
         list.forEach((list) => {
             list.style.backgroundColor = 'rgb(43, 0, 26)';
         })
-        item.style.backgroundColor = '#000';
+        item.style.backgroundColor = 'rgba(43, 0, 26, 0.202)';
     });
 })
 
 // lecture
-let array = ['mercedes', 'aba ra'];
+// let array = ['mercedes', 'aba ra'];
 
-let ulElement = `<ul>
-    <li>${array[0]}</li>
-    <li>${array[1]}</li>
-</ul>`
+// let ulElement = `<ul>
+//     <li>${array[0]}</li>
+//     <li>${array[1]}</li>
+// </ul>`
 
-document.body.innerHTML = ulElement;
+// document.body.innerHTML = ulElement;
