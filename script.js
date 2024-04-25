@@ -40,16 +40,31 @@ let ul = document.createElement('ul');
 ul.className = 'myUl';
 
 strings.forEach((ulLi) => {
+    let li = document.createElement('li');
+    li.textContent = ulLi;
+    li.className = 'classLi'
+    ul.appendChild(li);
     // li.addEventListener('click', () => {
-    //     li.style.backgroundColor = '#000';
     //     strings.forEach((list) => {
     //         list.style.backgroundColor = 'rgb(43, 0, 26)';
     //     })
+    //     li.style.backgroundColor = '#000';
     // });
-    let li = document.createElement('li');
-    li.textContent = ulLi;
-    ul.appendChild(li);
 }); 
 
 
+
 document.body.appendChild(ul);
+
+let list = document.querySelectorAll('.classLi');
+
+console.log(list);
+
+list.forEach((item) => {
+    item.addEventListener('click', () => {
+        list.forEach((list) => {
+            list.style.backgroundColor = 'rgb(43, 0, 26)';
+        })
+        item.style.backgroundColor = '#000';
+    });
+})
