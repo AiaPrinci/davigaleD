@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myUl {
+    background-color: #fff;
+    list-style: none;
+    display: flex;
+}
+
+.myUl li {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: rgb(43, 0, 26);
+    border-radius: 10px;
+    color: #fff;
+    font-family: arial;
+    box-shadow: 5px 5px 20px #000;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myUl li:hover {
+    scale: 1.1;
+}
+
+.myUl li:active {
+    scale: 1;
+}
